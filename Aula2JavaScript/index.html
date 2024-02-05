@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        meuNome = "Andre Roberto Pimentel"
+        console.log(meuNome)
+        nomeMae = "Helena de Oliveira  Pimentel"
+        console.log(nomeMae)
+        minhaIdade = 2024-window.prompt("Ano de nascimento",1972)
+        //o retorno do prompt é string mais o javascript ja faz o casting automatico.
+        minhaIdade = 2024- parseInt(window.prompt("Ano de nascimento",1972))
+        //colocar o parint para tratar os dados .
+
+        maiorIdade = minhaIdade>= 18 ? "maior de idade ": "Menor de idade "
+        // o interrogacao e operador ternario tudo que vem apos ele sera impresso na tela se verdadeira oque esta antes do dois pontos e falso oque esta posterior.
+        console.log(`Minha  idade: ${maiorIdade}`)
+
+        maeIdade = 2024-window.prompt("Ano de nascimento",1952)
+        console.log(minhaIdade)
+        console.log(maeIdade)
+        console.log("Helena de Oliveira Pimentel")
+        console.log('Regina Siani Guimaraes')
+        console.log(typeof(minhaIdade))
+        console.log(typeof(meuNome))
+        // ctrl . , comenta tudo que estiver marcado 
+
+        console.log(`Meu nome é : ${meuNome} e minha idade é : ${minhaIdade}`)
+        console.log('Meu nome é : ' + meuNome + " e minha idade é :"+ minhaIdade)
+
+        //Funcao
+        
+        function calculoIdade(idade){
+            //corpo da funcao
+            return 2024-idade
+        }
+
+        //imprimindo a funcao
+        minhaIdadeFuncao = calculoIdade( parseInt(window.prompt("Ano de nascimento",1972)) ) 
+        console.log(minhaIdadeFuncao)
+
+        
+        function calculoMaiorIdade(idade){
+            return idade >= 18 ? "Maior" :"Menor"
+        }
+
+        maiorIdadeFuncao = calculoMaiorIdade(parseInt(window.prompt("Ano de Nascimento")))
+        console.log(maiorIdadeFuncao)
+
+
+    </script>
+    
+</body>
+</html>
